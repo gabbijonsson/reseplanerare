@@ -25,6 +25,7 @@ header {
 h1 {
     text-transform: uppercase;
     font-size: 1.6rem;
+    color: #83992C;
 }
 
 h2 {
@@ -59,7 +60,6 @@ button:hover {
 }
 
 .header_txt-headline {
-    color: #83992C;
     margin: 1rem 0.2rem 0.5rem 0.2rem;
 }
 
@@ -117,5 +117,41 @@ button:hover {
     }
     .alternative_btn{
         width:30vw;
+    }
+}
+.main_container-infodisplay {
+    display: grid;
+    justify-items: center;
+}
+
+.main_container-addressinfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+#addressForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+#submitBtn {
+    grid-column: 1 / 3;
+}
+
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .main_container-choices {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .main_txt-direction-of-travel {
+        grid-column: 1 / 3;
     }
 }
