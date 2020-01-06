@@ -82,6 +82,8 @@ button:hover {
     grid-template-columns: 1fr;
     grid-gap: 1em;
     grid-template-rows: 1fr ;
+    justify-items: center;
+
 }
 .alternative_btn{
     width:60vw;
@@ -110,15 +112,6 @@ button:hover {
 .active{
     background-color: #83992C;
 }
-@media (min-width: 1024px) {
-    .main_container-alternatives{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr ;
-    }
-    .alternative_btn{
-        width:30vw;
-    }
-}
 .main_container-infodisplay {
     display: grid;
     justify-items: center;
@@ -140,18 +133,23 @@ button:hover {
 #submitBtn {
     grid-column: 1 / 3;
 }
-
 @media screen and (min-width: 600px) {
     h1 {
         font-size: 2rem;
     }
-    
+    .main_container-alternatives{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr ;
+    }
+    .alternative_btn{
+        width:40vw;
+    }
     .main_container-choices {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
 
-    .main_txt-direction-of-travel {
+    .main_txt-direction-of-travel, .main_txt-alternatives {
         grid-column: 1 / 3;
     }
 }
