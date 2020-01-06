@@ -76,3 +76,46 @@ button:hover {
     display: grid;
     justify-items: center;
 }
+
+.main_container-alternatives{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    grid-template-rows: 1fr ;
+}
+.alternative_btn{
+    width:60vw;
+    background-color: #DDE7B5;
+    color: #52403C;
+    font-weight: 200;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 12px;
+    transition-duration: 0.5s;
+    border: none;
+    text-align: center;
+}
+.alternative_btn span {
+    display:block;
+}
+.alternative_btn label {
+    cursor: pointer;
+}
+.alternative_btn input{
+    display:none;
+}
+.alternative_btn:hover{
+    background-color: #83992C;
+}
+.active{
+    background-color: #83992C;
+}
+@media (min-width: 1024px) {
+    .main_container-alternatives{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr ;
+    }
+    .alternative_btn{
+        width:30vw;
+    }
+}
