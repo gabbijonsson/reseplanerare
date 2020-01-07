@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #BEC2CB;
+    background-color: fda77f;
 }
 
 header {
@@ -128,6 +128,10 @@ button:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
+}
+
+#workAdressInput{
+    background-color: fda77f;
 }
 
 #submitBtn {
