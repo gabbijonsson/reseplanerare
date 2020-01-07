@@ -81,10 +81,28 @@ button:hover {
     display:grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;
-    grid-template-rows: 1fr ;
+    grid-template-rows: 1fr;
     justify-items: center;
-
 }
+
+.main_container-images{
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+.images{
+    height: 110px;
+    width: 200px;
+    border: 5px solid #DDE7B5;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
 .alternative_btn{
     width:60vw;
     background-color: #DDE7B5;
