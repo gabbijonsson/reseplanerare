@@ -22,4 +22,5 @@ document.addEventListener('DOMContentLoaded', function(){
         else if($(this).prop("checked") == false){
             $(this).parent().parent().removeClass('active');
         }
+    })
 });
