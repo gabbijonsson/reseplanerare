@@ -104,7 +104,7 @@ button:hover {
 }
 
 .alternative_btn{
-    width:60vw;
+    width:40vw;
     background-color: #DDE7B5;
     color: #52403C;
     font-weight: 200;
@@ -116,13 +116,16 @@ button:hover {
     text-align: center;
 }
 .alternative_btn span {
-    display:block;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 .alternative_btn label {
     cursor: pointer;
 }
 .alternative_btn input{
-    display:none;
+    position: absolute;
+    align-self: flex-start;
 }
 .alternative_btn:hover{
     background-color: #83992C;
@@ -140,7 +143,9 @@ button:hover {
     grid-template-columns: 1fr;
     justify-items: center;
 }
-
+.fa{
+    color:#474A11;
+}
 #addressForm {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -159,9 +164,6 @@ button:hover {
     .main_container-alternatives{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr ;
-    }
-    .alternative_btn{
-        width:40vw;
     }
     .main_container-choices {
         grid-template-columns: 1fr 1fr;
