@@ -15,4 +15,12 @@ document.addEventListener('DOMContentLoaded', function(){
         localStorage.setItem("homeAddress", newHomeAddress.value);
         localStorage.setItem("workAddress", newWorkAddress.value);
     });
+    $('input[type="checkbox"]').click(function(){
+        if($(this).prop("checked") == true){
+            $(this).parent().parent().addClass('active');
+        }
+        else if($(this).prop("checked") == false){
+            $(this).parent().parent().removeClass('active');
+        }
+    })
 });
