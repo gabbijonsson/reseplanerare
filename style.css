@@ -28,6 +28,7 @@ h1 {
     color: #83992C;
 }
 
+
 h2 {
     font-size: 1.2rem;
     color: #474A11;
@@ -81,10 +82,28 @@ button:hover {
     display:grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;
-    grid-template-rows: 1fr ;
+    grid-template-rows: 1fr;
     justify-items: center;
-
 }
+
+.main_container-images{
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+.images{
+    height: 110px;
+    width: 200px;
+    border: 5px solid #DDE7B5;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
 .alternative_btn{
     width:40vw;
     background-color: #DDE7B5;
@@ -133,6 +152,7 @@ button:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
+    grid-gap: 0.5em;
 }
 
 #submitBtn {
