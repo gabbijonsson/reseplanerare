@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-    const form = document.querySelector('form');
+    const formForAddress = document.querySelector('form');
     const newHomeAddress = document.getElementById('homeAddressInput');
     const newWorkAddress = document.getElementById('workAddressInput');
     const submitFormBtn = document.getElementById('submitBtn');
@@ -15,4 +15,8 @@ document.addEventListener('DOMContentLoaded', function(){
         localStorage.setItem("homeAddress", newHomeAddress.value);
         localStorage.setItem("workAddress", newWorkAddress.value);
     });
+
+    if (localStorage.getItem("homeAddress") !== null && localStorage.getItem("workAddress") !== null) {
+        formForAddress.style.display = "none";
+    }
 });
