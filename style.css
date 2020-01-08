@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: fda77f;
+    background-color: burlywood;
 }
 
 header {
@@ -153,3 +153,30 @@ button:hover {
         grid-column: 1 / 3;
     }
 }
+
+/* Tidtabell för tåg*/
+
+.header-train{
+    text-align: center;
+}
+
+.ul-tidtabell{
+    background-color: burlywood;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.ul-tidtabell > li{
+    background-color: #dde7b5;
+    padding:10px 20px;
+    margin: 10px 0;
+    transition: .5s;
+    justify-content: space-around;
+    display: flex;
+    word-spacing: 5px;
+    position: relative;
+    border-radius: 15px;
+}
+
+
