@@ -19,4 +19,12 @@ document.addEventListener('DOMContentLoaded', function(){
     if (localStorage.getItem("homeAddress") !== null && localStorage.getItem("workAddress") !== null) {
         formForAddress.style.display = "none";
     }
+    $('input[type="checkbox"]').click(function(){
+        if($(this).prop("checked") == true){
+            $(this).parent().parent().addClass('active');
+        }
+        else if($(this).prop("checked") == false){
+            $(this).parent().parent().removeClass('active');
+        }
+    })
 });

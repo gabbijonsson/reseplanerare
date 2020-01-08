@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #BEC2CB;
+    background-color: fda77f;
 }
 
 header {
@@ -77,6 +77,44 @@ button:hover {
     justify-items: center;
 }
 
+.main_container-alternatives{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    grid-template-rows: 1fr ;
+    justify-items: center;
+
+}
+.alternative_btn{
+    width:40vw;
+    background-color: #DDE7B5;
+    color: #52403C;
+    font-weight: 200;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 12px;
+    transition-duration: 0.5s;
+    border: none;
+    text-align: center;
+}
+.alternative_btn span {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.alternative_btn label {
+    cursor: pointer;
+}
+.alternative_btn input{
+    position: absolute;
+    align-self: flex-start;
+}
+.alternative_btn:hover{
+    background-color: #83992C;
+}
+.active{
+    background-color: #83992C;
+}
 .main_container-infodisplay {
     display: grid;
     justify-items: center;
@@ -87,7 +125,9 @@ button:hover {
     grid-template-columns: 1fr;
     justify-items: center;
 }
-
+.fa{
+    color:#474A11;
+}
 #addressForm {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -98,18 +138,20 @@ button:hover {
 #submitBtn {
     grid-column: 1 / 3;
 }
-
 @media screen and (min-width: 600px) {
     h1 {
         font-size: 2rem;
     }
-    
+    .main_container-alternatives{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr ;
+    }
     .main_container-choices {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
 
-    .main_txt-direction-of-travel {
+    .main_txt-direction-of-travel, .main_txt-alternatives {
         grid-column: 1 / 3;
     }
 }
