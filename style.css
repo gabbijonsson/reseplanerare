@@ -108,6 +108,8 @@ button:hover {
 .alternative_btn input{
     position: absolute;
     align-self: flex-start;
+    cursor: pointer;
+
 }
 .alternative_btn:hover{
     background-color: #83992C;
