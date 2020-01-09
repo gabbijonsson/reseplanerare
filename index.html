@@ -21,8 +21,8 @@
     <main>
         <div class="main_container-choices">
             <h2 class="main_txt-direction-of-travel">VAR?</h2>
-            <button class="main_btn-directon-home">HEM</button>
-            <button class="main_btn-directon-work">ARBETE</button>
+            <button class="main_btn-directon-home" id="homeBtn">HEM</button>
+            <button class="main_btn-directon-work" id="workBtn">ARBETE</button>
         </div>
         <div class="main_container-alternatives">
             <h2 class="main_txt-alternatives">HUR?</h2>
@@ -61,6 +61,32 @@
         </div>
         <div class="main_container-infodisplay">
             <h2 class="main_txt-headline"></h2>
+            <table id="tableTravelInfoHome">
+                <thead>
+                    <tr>
+                        <th scope="col">Linje</th>
+                        <th scope="col">Avgång</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><i class="fas fa-bus"> Buss 537</i></th>
+                        <td>Om 3 minuter</td>
+                    </tr>                
+            </table>
+            <table id="tableTravelInfoWork">
+                <thead>
+                    <tr>
+                        <th scope="col">Linje</th>
+                        <th scope="col">Avgång</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><i class="fas fa-train"> Tåg 3594</i></th>
+                        <td>Om 6 minuter</td>
+                    </tr>               
+            </table>
         </div>
         <div class="main_container-addressinfo">
             <h2 class="main_txt-saveAddressInfo"></h2>

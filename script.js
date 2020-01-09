@@ -5,13 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const newWorkAddress = document.getElementById('workAddressInput');
     const submitFormBtn = document.getElementById('submitBtn');
 
-    submitFormBtn.addEventListener("click", function() {
-        console.log('btn clicked');
-        console.log('hemadress:');
-        console.log(newHomeAddress.value);
-        
-        
-        
+    submitFormBtn.addEventListener("click", function() {    
         localStorage.setItem("homeAddress", newHomeAddress.value);
         localStorage.setItem("workAddress", newWorkAddress.value);
     });
@@ -26,5 +20,17 @@ document.addEventListener('DOMContentLoaded', function(){
         else if($(this).prop("checked") == false){
             $(this).parent().parent().parent().removeClass('active');
         }
+    })
+    const travelHomeBtn = document.getElementById('homeBtn');
+    const travelWorkBtn = document.getElementById('workBtn');
+    const travelInfoHome = document.getElementById('tableTravelInfoHome');
+    const travelInfoWork = document.getElementById('tableTravelInfoWork');
+    travelHomeBtn.addEventListener("click", function() {
+        travelInfoWork.style.display = "none";
+        travelInfoHome.style.display = "table";
+    })
+    travelWorkBtn.addEventListener("click", function() {
+        travelInfoHome.style.display = "none";
+        travelInfoWork.style.display = "table";
     })
 });
